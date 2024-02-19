@@ -33,7 +33,7 @@ header {
 }
 
 body {
-    background-image: url(background.jpg);
+    background-image: url(website/background.jpg);
     background-size: cover;
 }
 
