@@ -16,30 +16,45 @@ header {
     
 }
 
+
+table,td{
+    border-collapse: collapse;
+    border-right: 1px solid rgb(43, 42, 42);   
+}
+
+table,td:last-child {
+    border-right: none;
+}
+
+#content-1, #content-2 {
+    margin: 50px;
+}
+
+
+
 .header-contain {
     justify-self: center;
     grid-area: header-contain;
     width: 100%;
-    border-bottom: 2px solid rgb(182, 158, 92);
 }
 .h2-year {
     margin-bottom: 0;
     color: rgb(182, 158, 92);
-    font-size: 30px;
+    font-size: 40px;
 
 }
 
 .h2-year1 {
     margin-bottom: 0;
     color: rgb(230, 215, 167);
-    font-size: 30px;
+    font-size: 40px;
 
 }
 
 .p-content {
     margin-top: 0;
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -49,11 +64,11 @@ body {
 }
 
 .images {
-    max-width: 100% ; 
+    width: 30%;
     height: auto;
-    display: inline-block; 
-    margin: 0 auto; 
-    ;
+    display: block;
+    margin: auto; 
+    
 }
 
 .images1 {
@@ -63,14 +78,15 @@ body {
 }
 
 .video-mp4 {
-    max-width: 100%; 
-    margin: 0 auto; 
+width: 60%;    
+margin: 0 auto; 
+display: block;
 }
 
 .container{
     display: grid;
-    height: 200vh;
-    grid-template-columns: 0.5fr 0.5fr 0.3fr;
+    height: 180vh;
+    grid-template-columns: 0.5fr 0.5fr 0.2fr;
     grid-template-rows: 0.1fr 2fr 2fr 0.3fr;
     grid-template-areas: 
     "header-contain header-contain header-contain"
@@ -95,13 +111,15 @@ body {
 .sidebar{
     grid-area: sidebar;
     display: flex;
-    max-width: 1200px;
-    width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    padding: 1px;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
+
+
+
 .footer{
     grid-area: footer;
     justify-self: center;
@@ -114,98 +132,109 @@ body {
         height: 220vh;      
      }
     .images1 {
-        width: 45%;
+        width: 100%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 1700px) {
     .container {
-        height: 230vh;      
+        height: 220vh;      
      }
     .images1 {
-        width: 40%;
-
+        width: 45%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 1582px) {
     .container {
-        height: 240vh;      
+        height: 220vh;      
      }
     .images1 {
-        width: 35%;
-
+        width: 70%;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 1538px) {
     .container {
-        height: 250vh;      
+        height: 220vh;      
      }
     .images1 {
-        width: 35%;
-
+        width: 90%;
+        height: auto;
     }
 }
 
+@media only screen and (max-width: 1419px) {
+    .container {
+        height: 220vh;
+     }
+
+     .images1 {
+        width: 90%;
+        height: auto;
+    }
+}
 @media only screen and (max-width: 1365px) {
     .container {
+        height: 220vh;
+     }
+
+     .images1 {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1296px) {
+    .container {
+        height: 245vh;
+     }
+
+     .images1 {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .container {
         height: 260vh;
-     }
-
-     .images1 {
-        width: 35%;
-
-    }
-}
-
-@media only screen and (max-width: 1278px) {
-    .container {
-        height: 265vh;
-     }
-
-     .images1 {
-        width: 35%;
-
-    }
-}
-
-@media only screen and (max-width: 1192px) {
-    .container {
-        height: 270vh;
        
      }
 
      .images1 {
-        width: 35%;
-
+        width:90%;
+        height: auto;
     }
 }
 
-@media only screen and (max-width: 1105px) {
+@media only screen and (max-width: 1182px) {
     .container {
-        height: 275vh;
+        height: 285vh;
        
      }
 
      .images1 {
-        width: 35%;
-
+        width: 150%;
+        height: auto;
     }
 }
 
-@media only screen and (max-width: 1018px) {
+@media only screen and (max-width: 1094px) {
     .container {
-        height: 280vh;
+        height: 300vh;
        
      }
 
      .images1 {
-        width:35%;
-
+        width: 150%;
+        height: auto;
     }
 }
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 1040px) {
     .container {
        grid-template-columns: 1fr;
        grid-template-rows: 0.1fr 2fr 2fr 1fr 0.5fr;
@@ -218,10 +247,13 @@ body {
     }
 
     .images1 {
-        width: 25%;
+        width: 23%;
 
     }
 
+    .images {
+        width: 30%;
+    }
    
 }
 
