@@ -112,9 +112,9 @@ display: block;
     grid-area: sidebar;
     display: flex;
     flex-wrap: wrap;
-    padding: 1px;
     margin-left: 50px;
     margin-right: 50px;
+    justify-content: center;
 
 }
 
@@ -142,7 +142,7 @@ display: block;
         height: 220vh;      
      }
     .images1 {
-        width: 45%;
+        width: 100%;
         height: auto;
     }
 }
@@ -152,7 +152,7 @@ display: block;
         height: 220vh;      
      }
     .images1 {
-        width: 70%;
+        width: 100%;
         height: auto;
     }
 }
@@ -162,7 +162,7 @@ display: block;
         height: 220vh;      
      }
     .images1 {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 }
@@ -173,68 +173,12 @@ display: block;
      }
 
      .images1 {
-        width: 90%;
-        height: auto;
-    }
-}
-@media only screen and (max-width: 1365px) {
-    .container {
-        height: 220vh;
-     }
-
-     .images1 {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 }
 
-@media only screen and (max-width: 1296px) {
-    .container {
-        height: 245vh;
-     }
-
-     .images1 {
-        width: 90%;
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 1210px) {
-    .container {
-        height: 260vh;
-       
-     }
-
-     .images1 {
-        width:90%;
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 1182px) {
-    .container {
-        height: 285vh;
-       
-     }
-
-     .images1 {
-        width: 150%;
-        height: auto;
-    }
-}
-
-@media only screen and (max-width: 1094px) {
-    .container {
-        height: 300vh;
-       
-     }
-
-     .images1 {
-        width: 150%;
-        height: auto;
-    }
-}
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1300px) {
     .container {
        grid-template-columns: 1fr;
        grid-template-rows: 0.1fr 2fr 2fr 1fr 0.5fr;
@@ -247,7 +191,7 @@ display: block;
     }
 
     .images1 {
-        width: 23%;
+        width: 21%;
 
     }
 
