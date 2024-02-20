@@ -19,7 +19,11 @@ header {
 
 table,td{
     border-collapse: collapse;
-    border-right: 1px solid rgb(43, 42, 42);   
+    border-bottom: 1px  solid rgb(22, 22, 22);
+}
+
+td{
+    padding: 10px;
 }
 
 table,td:last-child {
@@ -40,14 +44,14 @@ table,td:last-child {
 .h2-year {
     margin-bottom: 0;
     color: rgb(182, 158, 92);
-    font-size: 40px;
+    font-size: 35px;
 
 }
 
 .h2-year1 {
     margin-bottom: 0;
     color: rgb(230, 215, 167);
-    font-size: 40px;
+    font-size: 35px;
 
 }
 
@@ -76,6 +80,7 @@ body {
     width: 50%; 
     height: auto; 
     object-fit: cover;
+ 
 }
 
 .video-mp4 {
@@ -86,7 +91,7 @@ display: block;
 
 .container{
     display: grid;
-    height: 180vh;
+    height: 195vh;
     grid-template-columns: 0.5fr 0.5fr 0.2fr;
     grid-template-rows: 0.1fr 2fr 2fr 0.3fr;
     grid-template-areas: 
@@ -130,10 +135,10 @@ display: block;
 
 @media only screen and (max-width: 1910px) {
     .container {
-        height: 220vh;      
+        height: 240vh;      
      }
     .images1 {
-        width: 100%;
+        width: 90%;
         height: auto;
     }
 }
@@ -143,7 +148,7 @@ display: block;
         height: 220vh;      
      }
     .images1 {
-        width: 100%;
+        width:85%;
         height: auto;
     }
 }
