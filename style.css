@@ -64,7 +64,8 @@ body {
 }
 
 .images {
-    width: 30%;
+  
+    width: 50%;
     height: auto;
     display: block;
     margin: auto; 
@@ -197,6 +198,91 @@ display: block;
 
     .images {
         width: 30%;
+    }
+
+    .video-mp4{
+        width: 30%;
+    }
+   
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 0.1fr 2fr 2fr 1fr 0.5fr;
+       grid-template-areas:
+       "header-contain"
+       "content-1"
+       "content-2"
+       "sidebar"
+       "footer"
+    }
+
+    .images1 {
+        width: 21%;
+
+    }
+
+    .images {
+        width: 45%;
+    }
+
+    .video-mp4{
+        width: 45%;
+    }
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 0.1fr 2fr 2fr 1fr 0.5fr;
+       grid-template-areas:
+       "header-contain"
+       "content-1"
+       "content-2"
+       "sidebar"
+       "footer"
+    }
+
+    .images1 {
+        width: 21%;
+
+    }
+
+    .images {
+        width: 55%;
+    }
+
+    .video-mp4{
+        width: 55%;
+    }
+   
+}
+
+@media only screen and (max-width: 514px) {
+    .container {
+       grid-template-columns: 1fr;
+       grid-template-rows: 0.1fr 2fr 2fr 1fr 0.5fr;
+       grid-template-areas:
+       "header-contain"
+       "content-1"
+       "content-2"
+       "sidebar"
+       "footer"
+    }
+
+    .images1 {
+        width: 50%;
+
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .video-mp4{
+        width: 100%;
     }
    
 }
