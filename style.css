@@ -328,12 +328,6 @@ display: block;
     animation: transIn1 5s ;
 }
 
-.footer{
-    animation: transIn1 5s ;
-}
-
-
-
 
 @keyframes transIn1{
     from{
